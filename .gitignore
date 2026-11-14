@@ -1,0 +1,25 @@
+# Altium: generated and temporary files
+__Previews/
+History/
+Project Logs for */
+Status Report.Txt
+*.REP
+*.RUL
+*.EXTREP
+*.apr
+*.APR_LIB
+*.7z
+
+# Third-party 3D models (not ours to share)
+INBOUWDOOS.STP
+cross_recessed_phillips_pan_head_M3x06.step
+
+# Original photos, replaced by the .webp files
+docs/photos/*.png
+
+# Licence texts (removed on purpose)
+LICENSES/
+
+# Windows
+Thumbs.db
+desktop.ini

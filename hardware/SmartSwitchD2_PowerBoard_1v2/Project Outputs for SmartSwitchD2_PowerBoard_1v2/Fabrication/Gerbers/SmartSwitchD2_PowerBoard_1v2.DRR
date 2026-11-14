@@ -1,0 +1,17 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: SmartSwitchD2_PowerBoard_1v2.PCBDOC   05/03/2024  18:23:20
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII Plated RoundHoles File : SmartSwitchD2_PowerBoard_1v2-Plated.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      10mil (0.25mm)                                            Round             31        PTH        3.83inch (97.17mm)
+T2      39mil (1mm)                                               Round             4         PTH        0.80inch (20.25mm)
+T3      69mil (1.75mm)                                            Round             2         PTH        0.37inch (9.50mm)
+T4      173mil (4.4mm)                                            Round             4         PTH        3.39inch (86.05mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              41
+
+Total Processing Time (hh:mm:ss) : 00:00:00

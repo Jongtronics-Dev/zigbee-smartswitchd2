@@ -1,0 +1,17 @@
+# Custom partition table for SmartSwitchD2 (based on zigbee_zczr, rebalanced).
+# Firmware slots (app0/app1) grown to 0x170000 (1.4375 MB each) and the sounds
+# partition (spiffs) shrunk to 0xFA000 (1000 KB) — firmware is prioritised and has
+# room to grow; sounds still holds the ~720 KB of MP3s with headroom.
+# The Zigbee partitions (zb_storage/zb_fct/rcp_fw) keep their original offsets so the
+# device's Zigbee pairing survives the repartition. Build with PartitionScheme=custom.
+#
+# Name,     Type, SubType, Offset,   Size, Flags
+nvs,        data, nvs,     0x9000,   0x5000,
+otadata,    data, ota,     0xe000,   0x2000,
+app0,       app,  ota_0,   0x10000,  0x170000,
+app1,       app,  ota_1,   0x180000, 0x170000,
+spiffs,     data, spiffs,  0x2F0000, 0xFA000,
+zb_storage, data, fat,     0x3EA000, 0x4000,
+zb_fct,     data, fat,     0x3EE000, 0x1000,
+rcp_fw,     data, spiffs,  0x3EF000, 0x1000,
+coredump,   data, coredump,0x3F0000, 0x10000,

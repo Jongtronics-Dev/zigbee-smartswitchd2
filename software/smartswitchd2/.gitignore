@@ -1,0 +1,20 @@
+# --- Local OTA settings: WiFi credentials + server URL ---
+# NEVER commit real credentials or addresses. Copy OtaConfig.example.h -> OtaConfig.h
+# and fill it in locally, both in this folder (server URL) and in updater/ (WiFi
+# fallback). This pattern matches OtaConfig.h in any subfolder.
+OtaConfig.h
+
+# --- Generated sound image and local tools ---
+spiffs.bin
+sounds_backup_*/
+mkspiffs
+mkspiffs.exe
+
+# --- Build output / caches ---
+/build/
+build/
+*.tmp
+
+# --- Editor folders ---
+.vs/
+.vscode/
